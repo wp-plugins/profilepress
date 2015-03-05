@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'pp_icon';
+	src:url('fonts/pp_icon.eot?7dsm6y');
+	src:url('fonts/pp_icon.eot?#iefix7dsm6y') format('embedded-opentype'),
+		url('fonts/pp_icon.woff?7dsm6y') format('woff'),
+		url('fonts/pp_icon.ttf?7dsm6y') format('truetype'),
+		url('fonts/pp_icon.svg?7dsm6y#pp_icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="ppicon-"]:before, [class*=" ppicon-"]:before {
+	font-family: 'pp_icon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ppicon-chevron-right:before {
+	content: "\e601";
+}
+
+.ppicon-eye:before {
+	content: "\e000";
+}
+
+.ppicon-mail:before {
+	content: "\e002";
+}
+
+.ppicon-link:before {
+	content: "\e005";
+}
+
+.ppicon-bell:before {
+	content: "\e006";
+}
+
+.ppicon-lock:before {
+	content: "\e007";
+}
+
+.ppicon-clock:before {
+	content: "\e014";
+}
+
+.ppicon-cog:before {
+	content: "\e023";
+}
+
+.ppicon-square-plus:before {
+	content: "\e044";
+}
+
+.ppicon-square-minus:before {
+	content: "\e045";
+}
+
+.ppicon-square-check:before {
+	content: "\e046";
+}
+
+.ppicon-square-cross:before {
+	content: "\e047";
+}
+
+.ppicon-head:before {
+	content: "\e074";
+}
+
+.ppicon-globe:before {
+	content: "\e078";
+}
+
+.ppicon-share:before {
+	content: "\e081";
+}
+
+.ppicon-marquee:before {
+	content: "\e082";
+}
+
+.ppicon-marquee-plus:before {
+	content: "\e083";
+}
+
+.ppicon-marquee-minus:before {
+	content: "\e084";
+}
+
+.ppicon-power:before {
+	content: "\e086";
+}
+
+.ppicon-star:before {
+	content: "\e093";
+}
+
+.ppicon-plus:before {
+	content: "\e114";
+}
+
+.ppicon-minus:before {
+	content: "\e115";
+}
+
+.ppicon-check:before {
+	content: "\e116";
+}
+
+.ppicon-cross:before {
+	content: "\e117";
+}
+
+.ppicon-profile_logo:before {
+	content: "\e600";
+}
+

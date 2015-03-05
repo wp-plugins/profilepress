@@ -1,0 +1,3 @@
+<?php
+
+/*Initially left blank*/

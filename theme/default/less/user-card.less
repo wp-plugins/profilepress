@@ -1,0 +1,67 @@
+
+.pp-container{
+	.block-center{
+		margin: 0 auto;
+		display: table;
+	}
+	#user-card{
+		.pp-main-avatar {
+			border: 1px solid #eee;
+			margin-bottom: 15px;
+			padding: 15px;
+			text-align: center;			
+
+			.block-center{
+				position: relative;
+			}
+			img{
+				height: auto;
+				width: 100%;
+				margin:0;
+				display: block;
+			}
+			form{
+				bottom: 0;
+				position: absolute;
+				width: 100%;
+				.pp-upload-input{
+					display: block;
+					left: 0;
+					.opacity(0);
+					position: absolute;
+					top: 0;
+					width: 100%;
+				}
+			}
+		}
+
+		.user-card-name{
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+
+		.user-name {
+			background: none repeat scroll 0 0 #eee;
+			border-radius: 2px;
+			font-size: 14px;
+			font-weight: normal;
+			margin-left: 10px;
+			padding: 2px 6px;
+		}
+
+		.bio{
+			margin-bottom:10px;
+		}
+	}
+	.user-links{
+		> span{
+			color: #888;
+			display: block;
+			margin-bottom: 5px;
+
+			&:before{
+				margin-right: 5px;
+			}
+		}
+	}
+}

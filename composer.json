@@ -1,0 +1,16 @@
+{
+    "name": "wp3/profile",
+    "description": "Profile plugin for WordPress",
+    "license": "GPL 3+",
+    "authors": [
+        {
+            "name": "Rahul Aryan",
+            "email": "rah12@live.com"
+        }
+    ],
+    "require": {},
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-sync": ""
+    }
+}

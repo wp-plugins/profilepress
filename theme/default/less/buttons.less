@@ -1,0 +1,46 @@
+.pp-container{
+	.pp-btn{
+		background: @btn-color;
+		border-color: transparent transparent darken(@btn-color, 5%);
+		border-image: none;
+		border-style: none none solid;
+		border-width: medium medium 2px;
+		.border-radius(2px);
+		color: #fff;
+		padding: 1px 6px;
+		height: 22px;
+
+		&:visited{
+			color: #fff;
+		}
+
+		&:hover{
+			background: darken(@btn-color, 5%);
+		}
+		&.light-color{
+			background: #aaa;
+			border-color: transparent transparent darken(#aaa, 5%);
+		}
+		&.btn-my-website{
+			background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+			border: 1px solid @btn-color;
+			color: @btn-color;
+			display: block;
+			font-size: 14px;
+			height: 40px;
+			margin-bottom: 13px;
+			padding: 8px;
+			text-align: center;
+			text-transform: uppercase;
+
+			&:visited{
+				color: @btn-color;
+			}
+
+			&:hover{
+				background: @btn-color;
+				color: #fff;
+			}
+		}
+	}
+}
