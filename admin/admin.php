@@ -234,6 +234,7 @@ class PP_Admin {
                 }
 
                 update_option('pp_opt', $old_options);
+
                 $result = array('status' => true, 'html' => '<div class="updated fade" style="display:none"><p><strong>'.__('Options updated successfully', 'pp').'</strong></p></div>');
             }
 				

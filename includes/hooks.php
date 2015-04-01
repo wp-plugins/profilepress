@@ -50,6 +50,7 @@ class PP_Hooks
                 $allowed_comment_types = apply_filters('get_avatar_comment_types', array(
                     'comment'
                     ));
+
                 if (!empty($id_or_email->comment_type) && !in_array($id_or_email->comment_type, (array)$allowed_comment_types)) {
                     return $avatar;
                 }
@@ -71,7 +72,7 @@ class PP_Hooks
 
             
             $resized     = pp_get_avatar($id_or_email, $size);
-            
+
             if ($resized) {
                 return "<img data-cont='avatar_{$id_or_email}' alt='{$alt}' src='{$resized}' class='avatar avatar-{$size} photo' height='{$size}' width='{$size}' />";
             } 
@@ -80,7 +81,8 @@ class PP_Hooks
                     'html' => false,
                     'user_id' => $id_or_email
                     ));
-                return '<img data-cont="avatar_' . $id_or_email . '" alt="' . $alt . '" data-name="' . $display_name . '" data-height="' . $size . '" data-width="' . $size . '" data-char-count="2" class="pp-dynamic-avatar"/>';
+
+                return '<img data-cont="avatar_' . $id_or_email . '" alt="' . $alt . '" data-name="' . $display_name . '" data-height="' . $size . '" data-width="' . $size . '" data-char-count="1" class="pp-dynamic-avatar"/>';
             }
         }
     }
@@ -97,8 +99,8 @@ class PP_Hooks
             $this,
             'add_favorite_button'
             ));
-        
-        if (!is_singular(array_flip(pp_opt('favorite_cpt')))) return $content;
+
+        if (!pp_show_favorite_on_cpt() || !is_singular(pp_show_favorite_on_cpt())) return $content;
         
         $btn = wp3_favorite_btn(get_the_ID());
         

@@ -273,7 +273,7 @@ class PP_Ajax
                     'action'    => 'removed_from_favorite',
                     'do'        => 'replace removeClass',
                     'container' => '#favorite_'.$p_id,
-                    'html'      => __('Add to favorite', 'pp'),
+                    'html'      => '<span>'.__('Add to favorite', 'pp').'</span>',
                     'class'     => 'active'
                     )
                 );
@@ -296,7 +296,7 @@ class PP_Ajax
                     'action'    => 'added_to_favorite',
                     'do'        => 'replace addClass',
                     'container' => '#favorite_'.$p_id,
-                    'html'      => __('Remove from favorite', 'pp'),
+                    'html'      => '<span>'.__('Remove from favorite', 'pp').'</span>',
                     'class'     => 'active'
                     )
                 );

@@ -15,7 +15,7 @@
      * Plugin URI:        http://wp3.in
      * Description:       Simple user profile for WordPress
      * Donate link: https://www.paypal.com/cgi-bin/webscr?business=rah12@live.com&cmd=_xclick&item_name=Donation%20to%20ProfilePress%20development
-     * Version:           0.0.6
+     * Version:           0.0.7
      * Author:            Rahul Aryan
      * Author URI:        http://wp3.in
      * Text Domain:       pp
@@ -38,7 +38,7 @@ if (!class_exists('ProfilePress')) {
     class ProfilePress
     {
 
-        private $_plugin_version = '0.0.6';
+        private $_plugin_version = '0.0.7';
 
         private $_plugin_path;
 

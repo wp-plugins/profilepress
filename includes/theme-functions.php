@@ -338,7 +338,7 @@ function wp3_favorite_btn($post_id    = false) {
     $nonce      = wp_create_nonce('favorite_' . $post_id);
     $title      = (!$favorited) ? (__('Add to favorite', 'pp')) : (__('Remove favorite', 'pp'));
     
-    return '<a id="favorite_' . $post_id . '" href="#" class="ppicon-star pp-btn favorite-btn' . ($favorited ? ' active ' : ' ') . '" data-query="pp_ajax_action=favorite&p_id=' . $post_id . '&__nonce=' . $nonce . '" data-action="favorite">' . $title . '</a>';
+    return '<a id="favorite_' . $post_id . '" href="#" class="ppicon-star pp-btn favorite-btn' . ($favorited ? ' active ' : ' ') . '" data-query="pp_ajax_action=favorite&p_id=' . $post_id . '&__nonce=' . $nonce . '" data-action="favorite"><span>' . $title . '</span></a>';
 }
 
 function pp_user_favorite_cpt_links() {    

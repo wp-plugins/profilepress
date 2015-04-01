@@ -183,7 +183,7 @@ function is_profilepress() {
 function pp_get_current_user() {
     GLOBAL $pp_user_id;
     $pp_user_id = (int)get_query_var('pp_user');
-    
+
     if (empty($pp_user_id)) return get_current_user_id();
     
     return $pp_user_id;

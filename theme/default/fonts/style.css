@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'pp_icon';
-	src:url('fonts/pp_icon.eot?7dsm6y');
-	src:url('fonts/pp_icon.eot?#iefix7dsm6y') format('embedded-opentype'),
-		url('fonts/pp_icon.woff?7dsm6y') format('woff'),
-		url('fonts/pp_icon.ttf?7dsm6y') format('truetype'),
-		url('fonts/pp_icon.svg?7dsm6y#pp_icon') format('svg');
+	src:url('fonts/pp_icon.eot?l690up');
+	src:url('fonts/pp_icon.eot?#iefixl690up') format('embedded-opentype'),
+		url('fonts/pp_icon.woff?l690up') format('woff'),
+		url('fonts/pp_icon.ttf?l690up') format('truetype'),
+		url('fonts/pp_icon.svg?l690up#pp_icon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,8 +23,8 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.ppicon-chevron-right:before {
-	content: "\e601";
+.ppicon-star:before {
+	content: "\e602";
 }
 
 .ppicon-eye:before {
@@ -83,24 +83,8 @@
 	content: "\e081";
 }
 
-.ppicon-marquee:before {
-	content: "\e082";
-}
-
-.ppicon-marquee-plus:before {
-	content: "\e083";
-}
-
-.ppicon-marquee-minus:before {
-	content: "\e084";
-}
-
 .ppicon-power:before {
 	content: "\e086";
-}
-
-.ppicon-star:before {
-	content: "\e093";
 }
 
 .ppicon-plus:before {
@@ -117,6 +101,10 @@
 
 .ppicon-cross:before {
 	content: "\e117";
+}
+
+.ppicon-chevron-right:before {
+	content: "\e601";
 }
 
 .ppicon-profile_logo:before {

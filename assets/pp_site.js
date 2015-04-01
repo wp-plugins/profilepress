@@ -81,23 +81,23 @@
                     if (typeof data.view !== 'undefined') {
                         $.each(data.view, function(i, view) {
                             $('[data-view="' + i + '"]').text(view);
-                            if (view !== 0) $('[data-view="' + i + '"]').removeClass('ap-view-count-0');
+                            if (view !== 0) $('[data-view="' + i + '"]').removeClass('pp-view-count-0');
                         });
                     }
                 }
             });
         },
         uniqueId: function() {
-            return $('.ap-uid').length;
+            return $('.pp-uid').length;
         },
         showLoading: function() {
             var uid = this.uniqueId();
-            var el = $('<div class="ap-loading-icon ap-uid" id="apuid-' + uid + '"><i class="apicon-sync"><i></div>');
+            var el = $('<div class="pp-loading-icon pp-uid" id="apuid-' + uid + '"><i class="apicon-sync"><i></div>');
             $('body').append(el);
             return '#apuid-' + uid;
         },
         hideLoading: function() {
-            $('.ap-loading-icon').hide();
+            $('.pp-loading-icon').hide();
         },
         pp_ajax_form: function() {
             $('body').delegate('[data-action="pp_ajax_form"]', 'submit', function() {
@@ -111,8 +111,8 @@
                 if (typeof data.errors !== 'undefined') {
                     ProfileSite.clearFormErrors(data.form);
                     $.each(data.errors, function(i, message) {
-                        var parent = $('#' + data.form).find('#' + i).closest('.ap-form-fields');
-                        parent.addClass('ap-have-error');
+                        var parent = $('#' + data.form).find('#' + i).closest('.pp-form-fields');
+                        parent.addClass('pp-have-error');
                         ProfileSite.helpBlock(parent, message);
                     });
                 }
@@ -120,20 +120,20 @@
         },
         helpBlock: function(elm, message) {
             /* remove existing help block */
-            if ($(elm).find('.ap-form-error-message').length > 0) $(elm).find('.ap-form-error-message').remove();
-            $(elm).append('<p class="ap-form-error-message">' + message + '</p>');
+            if ($(elm).find('.pp-form-error-message').length > 0) $(elm).find('.pp-form-error-message').remove();
+            $(elm).append('<p class="pp-form-error-message">' + message + '</p>');
         },
         clearFormErrors: function(form) {
-            var elm = $('#' + form).find('.ap-have-error');
-            elm.find('.ap-form-error-message').remove();
-            elm.removeClass('ap-have-error');
+            var elm = $('#' + form).find('.pp-have-error');
+            elm.find('.pp-form-error-message').remove();
+            elm.removeClass('pp-have-error');
         },
         appendMessageBox: function() {
-            if ($('#ap-notify').length == '0') $('body').append('<div id="ap-notify"></div>');
+            if ($('#pp-notify').length == '0') $('body').append('<div id="pp-notify"></div>');
         },
         addMessage: function(message, type) {
             var icon = pplang[type];
-            $('<div class="ap-notify-item ' + type + '"><i class="' + icon + '"></i>' + message + '</div>').appendTo('#ap-notify').animate({
+            $('<div class="pp-notify-item ' + type + '"><i class="' + icon + '"></i>' + message + '</div>').appendTo('#pp-notify').animate({
                 'margin-left': 0
             }, 500).delay(5000).fadeOut(200);
         },

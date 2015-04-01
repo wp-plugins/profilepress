@@ -92,3 +92,18 @@ function pp_allowed_editor_tags() {
     
     return apply_filters('pp_allowed_editor_tags', $tags);
 }
+
+function pp_show_favorite_on_cpt(){
+    $cpts = pp_opt('favorite_cpt');
+
+    $enabled = array();
+    if(!empty($cpts) && is_array($cpts))
+        foreach ($cpts as $cpt => $value){
+            if($value)
+                $enabled[] = $cpt;
+        }
+
+    if(!empty($enabled))
+        return $enabled;
+    return false;
+}

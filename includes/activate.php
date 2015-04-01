@@ -35,7 +35,7 @@ function pp_activate($network_wide) {
     if (!$post) {
         $args = array();
         $args['post_type']          = "page";
-        $args['post_content']       = "[pp]";
+        $args['post_content']       = "[profilepress]";
         $args['post_status']        = "publish";
         $args['post_title']         = "PROFILE_TITLE";
         $args['post_name']          = "pp";
